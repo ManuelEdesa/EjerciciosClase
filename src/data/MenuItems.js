@@ -21,6 +21,12 @@ export const MenuItems = [
     title: 'Perfil',
     component: Perfil,
   },
+  {
+    id:4,
+    path: '/coches',
+    title: 'Coches',
+    component: Coches,
+  },
 ];
 
 /*
