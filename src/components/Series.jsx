@@ -43,7 +43,7 @@ class Series extends React.Component {
                     {DatosTablaSeries[2].marca} {DatosTablaSeries[2].modelo}
                   </Card.Title>
                   <Card.Text>
-                    Matrícula: {DatosTablaSeries[2].matricula}
+                    Información: {DatosTablaSeries[2].matricula}
                     <p />
                     {DatosTablaSeries[2].descripción}
                   </Card.Text>

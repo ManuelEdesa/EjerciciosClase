@@ -14,7 +14,7 @@ export const DatosTablaSeries = [
     capitulos: '16',
     imagen:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/the-witcher-1621253612.jpeg',
-    descripción: 'Un coche genial',
+    descripción: 'Aventuras y fantasia',
   },
   {
     titulo: 'La Expansión',
@@ -41,6 +41,6 @@ export const DatosTablaSeries = [
     capitulos: '16',
     imagen:
     'https://static.wikia.nocookie.net/esstarwars/images/2/29/MandoS2PosterES.jpg',
-  descripción: 'La mejor comedia que existe',
+  descripción: 'Por fin algo de Star Wars decente',
   },
 ];
