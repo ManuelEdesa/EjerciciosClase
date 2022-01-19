@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Container, Table, Row, Col } from 'react-bootstrap';
 import { TitulosTablaSeries, DatosTablaSeries } from '../data/DatosSeries';
+
 class Series extends React.Component {
   constructor(props) {
     super(props);
@@ -46,6 +47,21 @@ class Series extends React.Component {
                     Información: {DatosTablaSeries[2].matricula}
                     <p />
                     {DatosTablaSeries[2].descripción}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={DatosTablaSeries[3].imagen} />
+                <Card.Body>
+                  <Card.Title>
+                    {DatosTablaSeries[3].marca} {DatosTablaSeries[3].modelo}
+                  </Card.Title>
+                  <Card.Text>
+                    Información: {DatosTablaSeries[3].matricula}
+                    <p />
+                    {DatosTablaSeries[3].descripción}
                   </Card.Text>
                 </Card.Body>
               </Card>
