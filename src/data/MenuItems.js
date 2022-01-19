@@ -1,6 +1,7 @@
 import { Home } from '../components/Home';
 import { PaginaListas } from '../components/PaginaListas';
 import { Perfil } from '../components/Perfil';
+import Coches from '../components/Coches';
 
 export const MenuItems = [
   {
@@ -22,7 +23,7 @@ export const MenuItems = [
     component: Perfil,
   },
   {
-    id:4,
+    id: 4,
     path: '/coches',
     title: 'Coches',
     component: Coches,
