@@ -2,16 +2,35 @@ import React from 'react';
 import { Card, Container, Table, Row, Col } from 'react-bootstrap';
 import { TitulosTablaSeries, DatosTablaSeries } from '../data/DatosSeries';
 
-var a=1;
-//para detectar el onclick (DEBUG)
-function showAlert(event) {
-  alert("onclick Event detected!");
-}
-
 class Series extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      imagen: '',
+      titulo2: '',
+      fechaestreno2: '',
+      temporadas2: '',
+      capitulos2: '',
+    };
   }
+  /*titulo: 'The Witcher',
+    fechaestreno: '20 de diciembre de 2019',
+    temporadas: '2 ',
+    capitulos: '16',
+    imagen:
+      'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/the-witcher-1621253612.jpeg',
+    descripción: 'Aventuras y fantasia',*/
+  eventoclick(item) {
+    this.setState({
+      imagen: item.imagen,
+      titulo2: item.titulo,
+      fechaestreno2: item.fechaestreno,
+      modoptemporadas2: item.temporadas,
+      capitulos2: item.capitulos,
+    });
+  }
+
+
   render() {
     return (
       <div className="main-site">
@@ -31,12 +50,12 @@ class Series extends React.Component {
                 <tbody>
                   {DatosTablaSeries.map((item) => {
                     return (
-                      <tr>
-                        <td>{item.titulo}</td>
-                        <td>{item.fechaestreno}</td>
-                        <td>{item.temporadas}</td>
-                        <td>{item.capitulos}</td>
-                      </tr>
+                      <tr onClick={() => this.eventoclick(item)}>
+                      <td>{item.titulo}</td>
+                      <td>{item.fechaestreno}</td>
+                      <td>{item.temporadas}</td>
+                      <td>{item.capitulos}</td>
+                    </tr>
                     );
                   })}
                 </tbody>
@@ -44,35 +63,23 @@ class Series extends React.Component {
             </Col>
             <Col lg={4} md={6}>
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={DatosTablaSeries[a].imagen} />
+                <Card.Img variant="top" src={this.state.imagen} />
                 <Card.Body>
                   <Card.Title>
-                    {DatosTablaSeries[a].marca} {DatosTablaSeries[a].modelo}
+                    {this.state.titulo2}
+                    <p/>
+                    {this.state.fechaestreno2}
                   </Card.Title>
                   <Card.Text>
-                    Información: {DatosTablaSeries[a].matricula}
+                  {this.state.temporadas2}
                     <p />
-                    {DatosTablaSeries[a].descripción}
+                    {this.state.capitulos2}
                   </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
             
-            <Col lg={4} md={6}>
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={DatosTablaSeries[3].imagen} />
-                <Card.Body>
-                  <Card.Title>
-                    {DatosTablaSeries[3].marca} {DatosTablaSeries[3].modelo}
-                  </Card.Title>
-                  <Card.Text>
-                    Información: {DatosTablaSeries[3].matricula}
-                    <p />
-                    {DatosTablaSeries[3].descripción}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+         
           </Row>
         </Container>
       </div>
