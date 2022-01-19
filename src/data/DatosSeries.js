@@ -35,9 +35,12 @@ export const DatosTablaSeries = [
     descripción: 'La mejor comedia que existe',
   },
   {
-    titulo: '0000 LOL',
-    fechaestreno: 'Peugeot',
-    temporadas: 'Partner',
-    capitulos: 'rojo',
+    titulo: 'The Mandalorian',
+    fechaestreno: '12 de noviembre de 2019',
+    temporadas: '2',
+    capitulos: '16',
+    imagen:
+    'https://static.wikia.nocookie.net/esstarwars/images/2/29/MandoS2PosterES.jpg',
+  descripción: 'La mejor comedia que existe',
   },
 ];
