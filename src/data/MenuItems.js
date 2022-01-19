@@ -1,7 +1,7 @@
 import { Home } from '../components/Home';
 import { PaginaListas } from '../components/PaginaListas';
 import { Perfil } from '../components/Perfil';
-import Coches from '../components/Series';
+import Series from '../components/Series';
 
 export const MenuItems = [
   {
