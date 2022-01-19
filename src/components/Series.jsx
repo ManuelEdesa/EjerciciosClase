@@ -11,6 +11,7 @@ class Series extends React.Component {
       fechaestreno2: '',
       temporadas2: '',
       capitulos2: '',
+      descripcion2:'',
     };
   }
 
@@ -21,6 +22,7 @@ class Series extends React.Component {
       fechaestreno2: item.fechaestreno,
       modoptemporadas2: item.temporadas,
       capitulos2: item.capitulos,
+      descripcion2: item.descripción,
     });
   }
 
@@ -49,6 +51,7 @@ class Series extends React.Component {
                       <td>{item.fechaestreno}</td>
                       <td>{item.temporadas}</td>
                       <td>{item.capitulos}</td>
+                      
                     </tr>
                     );
                   })}
@@ -61,13 +64,10 @@ class Series extends React.Component {
                 <Card.Body>
                   <Card.Title>
                     {this.state.titulo2}
-                    <p/>
-                    {this.state.fechaestreno2}
                   </Card.Title>
                   <Card.Text>
-                  {this.state.temporadas2}
-                    <p />
-                    {this.state.capitulos2}
+
+                    {this.state.descripcion2}
                   </Card.Text>
                 </Card.Body>
               </Card>
