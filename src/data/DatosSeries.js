@@ -22,7 +22,7 @@ export const DatosTablaSeries = [
     temporadas: '6',
     capitulos: '62',
     imagen:
-      'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/the-witcher-1621253612.jpeg',
+      'https://www.muycomputer.com/wp-content/uploads/2021/10/TheExpanse.jpg',
     descripción: 'Una aventura en el espacio',
   },
   {
