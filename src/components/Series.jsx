@@ -2,11 +2,12 @@ import React from 'react';
 import { Card, Container, Table, Row, Col } from 'react-bootstrap';
 import { TitulosTablaSeries, DatosTablaSeries } from '../data/DatosSeries';
 
-function onSelectRow(row, isSelected, e) {
-  if (isSelected) {
-    alert(`You just selected '${row['name']}'`)
-  }
+var a=1;
+//para detectar el onclick (DEBUG)
+function showAlert(event) {
+  alert("onclick Event detected!");
 }
+
 class Series extends React.Component {
   constructor(props) {
     super(props);
@@ -21,7 +22,7 @@ class Series extends React.Component {
               <Table responsive striped>
                 <thead>
                   <tr>
-                    <th>{TitulosTablaSeries.id}</th>
+                    <th>{TitulosTablaSeries.id} </th>
                     <th>{TitulosTablaSeries.field1}</th>
                     <th>{TitulosTablaSeries.field2}</th>
                     <th>{TitulosTablaSeries.field3}</th>
@@ -43,15 +44,15 @@ class Series extends React.Component {
             </Col>
             <Col lg={4} md={6}>
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={DatosTablaSeries[1].imagen} />
+                <Card.Img variant="top" src={DatosTablaSeries[a].imagen} />
                 <Card.Body>
                   <Card.Title>
-                    {DatosTablaSeries[1].marca} {DatosTablaSeries[1].modelo}
+                    {DatosTablaSeries[a].marca} {DatosTablaSeries[a].modelo}
                   </Card.Title>
                   <Card.Text>
-                    Información: {DatosTablaSeries[1].matricula}
+                    Información: {DatosTablaSeries[a].matricula}
                     <p />
-                    {DatosTablaSeries[1].descripción}
+                    {DatosTablaSeries[a].descripción}
                   </Card.Text>
                 </Card.Body>
               </Card>
