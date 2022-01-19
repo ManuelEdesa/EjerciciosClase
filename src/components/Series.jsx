@@ -13,13 +13,7 @@ class Series extends React.Component {
       capitulos2: '',
     };
   }
-  /*titulo: 'The Witcher',
-    fechaestreno: '20 de diciembre de 2019',
-    temporadas: '2 ',
-    capitulos: '16',
-    imagen:
-      'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/the-witcher-1621253612.jpeg',
-    descripción: 'Aventuras y fantasia',*/
+
   eventoclick(item) {
     this.setState({
       imagen: item.imagen,
