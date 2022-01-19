@@ -2,6 +2,11 @@ import React from 'react';
 import { Card, Container, Table, Row, Col } from 'react-bootstrap';
 import { TitulosTablaSeries, DatosTablaSeries } from '../data/DatosSeries';
 
+function onSelectRow(row, isSelected, e) {
+  if (isSelected) {
+    alert(`You just selected '${row['name']}'`)
+  }
+}
 class Series extends React.Component {
   constructor(props) {
     super(props);
@@ -38,19 +43,20 @@ class Series extends React.Component {
             </Col>
             <Col lg={4} md={6}>
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={DatosTablaSeries[2].imagen} />
+                <Card.Img variant="top" src={DatosTablaSeries[1].imagen} />
                 <Card.Body>
                   <Card.Title>
-                    {DatosTablaSeries[2].marca} {DatosTablaSeries[2].modelo}
+                    {DatosTablaSeries[1].marca} {DatosTablaSeries[1].modelo}
                   </Card.Title>
                   <Card.Text>
-                    Información: {DatosTablaSeries[2].matricula}
+                    Información: {DatosTablaSeries[1].matricula}
                     <p />
-                    {DatosTablaSeries[2].descripción}
+                    {DatosTablaSeries[1].descripción}
                   </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
+            
             <Col lg={4} md={6}>
               <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={DatosTablaSeries[3].imagen} />
