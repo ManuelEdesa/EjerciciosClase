@@ -39,7 +39,7 @@ export const MenuItems = [
     id: 6,
     path: '/especies',
     title: 'Especies',
-    component: PelisGhibli,
+    component: Especies,
   },
 ];
 
