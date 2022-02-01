@@ -4,6 +4,7 @@ import { Perfil } from '../components/Perfil';
 import Series from '../components/Series';
 import PelisGhibli from '../components/PelisGhibli';
 import Especies from '../components/Especies';
+import Crypto from '../components/Crypto';
 export const MenuItems = [
   {
     id: 1,
@@ -40,6 +41,12 @@ export const MenuItems = [
     path: '/especies',
     title: 'Especies',
     component: Especies,
+  },
+  {
+    id: 7,
+    path: '/crypto',
+    title: 'Crypto',
+    component: Crypto,
   },
 ];
 
