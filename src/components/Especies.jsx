@@ -47,10 +47,10 @@ class Especies extends React.Component {
                         key={uuid()}
                         onClick={() => this.changeSelected(item)}
                       >
-                        <td>{item.title}</td>
-                        <td>{item.director}</td>
-                        <td>{item.release_date}</td>
-                        <td>{item.rt_score}</td>
+                        <td>{item.name}</td>
+                        <td>{item.classification}</td>
+                        <td>{item.eye_colors}</td>
+                        <td>{item.hair_colors}</td>
                       </tr>
                     );
                   })}
