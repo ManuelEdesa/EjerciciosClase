@@ -23,7 +23,7 @@ class Especies extends React.Component {
 
   render() {
     this.state.selectedItem !== null
-      ? console.log(`Objeto seleccionado: ${this.state.selectedItem.title}`)
+      ? console.log(`Objeto seleccionado: ${this.state.selectedItem.name}`)
       : console.log(`No hay objeto seleccionado`);
     return (
       <div className="main-site">

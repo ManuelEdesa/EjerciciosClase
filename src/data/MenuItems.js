@@ -3,7 +3,7 @@ import { PaginaListas } from '../components/PaginaListas';
 import { Perfil } from '../components/Perfil';
 import Series from '../components/Series';
 import PelisGhibli from '../components/PelisGhibli';
-
+import Especies from '../components/Especies';
 export const MenuItems = [
   {
     id: 1,
@@ -33,6 +33,12 @@ export const MenuItems = [
     id: 5,
     path: '/ghibli',
     title: 'Películas Ghibli',
+    component: PelisGhibli,
+  },
+  {
+    id: 6,
+    path: '/especies',
+    title: 'Especies',
     component: PelisGhibli,
   },
 ];
