@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import './componente-lista.css';
-
+//esta clase recoge los componentes del checkbox y del estado hecho/noHecho
 export default function ComponenteLista(props) {
   function setElementClass() {
     claseLista = props.prioridad;

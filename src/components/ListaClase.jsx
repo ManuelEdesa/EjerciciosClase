@@ -39,7 +39,7 @@ class ListaClase extends React.Component {
     );
     this.setState({ listaComponentes: newLista });
   }
-
+//esto es el render para mostrar la lista y sus elementos
   render() {
     return (
       <div>
