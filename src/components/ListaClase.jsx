@@ -13,7 +13,7 @@ class ListaClase extends React.Component {
     this.valorTextInput = React.createRef();
     this.valorPrioritySelect = React.createRef();
   }
-
+//esto inicializa la lista de elementos iniciales con un bucle for
   initList(elementos) {
     const listaInicial = [];
     for (let i = 0; i < elementos.length; i++) {
@@ -28,7 +28,7 @@ class ListaClase extends React.Component {
     }
     return listaInicial;
   }
-
+//esto es para añadir un elemento a la lista de tareas
   addElement() {
     const newLista = this.state.listaComponentes.concat(
       <ComponenteListaClase

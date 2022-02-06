@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+//importa el menu item con sus elementos para incluirlos mas abajo en el render
 import { MenuItems } from '../data/MenuItems';
 import './header.css';
 
@@ -25,7 +26,9 @@ class BootstrapHeader extends React.Component {
             id="responsive-navbar-nav"
             className="justify-content-end"
           >
+            
             <Nav>
+             Mostramos los elementos de menu item
               {MenuItems.map((item) => {
                 return (
                   <Nav.Link as={Link} to={item.path}>
