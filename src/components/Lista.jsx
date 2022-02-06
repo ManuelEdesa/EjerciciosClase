@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import ComponenteLista from './ComponenteLista';
 import uuid from 'react-uuid';
-
+//al igual que en lista clase carga los elementos mendiante un bucle for
 export default function Lista(props) {
   const listaInicial = [];
   if (props.elementos !== undefined) {
