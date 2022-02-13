@@ -9,7 +9,7 @@ import HomePage from '../components/HomePage/HomePage';
 export const MenuItems = [
   
   {
-    id: 1,
+    id: 8,
     path: '/',
     title: 'HomePage',
     component: HomePage,
