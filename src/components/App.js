@@ -5,7 +5,6 @@ import { signIn } from './auth';
 import AuthRoute from './AuthRoute';
 
 import Home from './Home';
-import About from './About';
 import Profile from './Profile';
 import NotFound from './NotFound';
 import LoginForm from './LoginForm';
@@ -24,9 +23,7 @@ function App() {
         <Link to="/">
           <button>Home</button>
         </Link>
-        <Link to="/about">
-          <button>About</button>
-        </Link>
+       
         <Link to="/profile">
           <button>Profile</button>
         </Link>
@@ -42,7 +39,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
+         
           <Route
             path="/login"
             render={props => (
