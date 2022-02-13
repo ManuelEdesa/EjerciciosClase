@@ -16,7 +16,21 @@ class Home extends React.Component {
       password: this.inputPassword.current.value,
     });
   }
-
+   Profile({ user }) {
+    const { email, password, name } = user || {};
+    return (
+      <>
+        <h1>Bienvenido {email} </h1>
+        <dt>Email</dt>
+        <dd>{email}</dd>
+        <dt>Password</dt>
+        <dd>{password}</dd>
+        <dt>Name</dt>
+        <dd>{name}</dd>
+      </>
+    );
+  }
+  
   componentDidMount() {
     this.setState({
       user: localStorage.getItem('user'),

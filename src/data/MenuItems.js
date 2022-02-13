@@ -1,11 +1,12 @@
 import  Home  from '../components/Home';
 import { PaginaListas } from '../components/PaginaListas';
-import { Perfil } from '../components/Perfil';
+
 import Series from '../components/Series';
 import PelisGhibli from '../components/PelisGhibli';
 import Especies from '../components/Especies';
 import Crypto from '../components/Crypto';
 import App from '../components/App';
+
 export const MenuItems = [
 
   {
@@ -21,12 +22,7 @@ export const MenuItems = [
     title: 'Listas de tareas',
     component: PaginaListas,
   },
-  {
-    id: 3,
-    path: '/perfil',
-    title: 'Perfil',
-    component: Perfil,
-  },
+  
   {
     id: 4,
     path: '/series',
