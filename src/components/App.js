@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
-import { signIn } from '/auth';
-import AuthRoute from '/AuthRoute';
+import { signIn } from './auth';
+import AuthRoute from './AuthRoute';
 
-import Home from '/Home';
-import About from '/About';
-import Profile from '/Profile';
-import NotFound from '/NotFound';
-import LoginForm from '/LoginForm';
-import LogoutButton from '/LogoutButton';
+import Home from './Home';
+import About from './About';
+import Profile from './Profile';
+import NotFound from './NotFound';
+import LoginForm from './LoginForm';
+import LogoutButton from './LogoutButton';
 
 function App() {
   const [user, setUser] = useState(null);

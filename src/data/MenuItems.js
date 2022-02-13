@@ -9,17 +9,12 @@ import App from '../components/App';
 export const MenuItems = [
 
   {
-    id: 7,
+    id: 1,
     path: '/Login',
     title: 'Login',
     component: App,
   },
-  {
-    id: 1,
-    path: '/',
-    title: 'Home',
-    component: Home,
-  },
+ 
   {
     id: 2,
     path: '/listas',
