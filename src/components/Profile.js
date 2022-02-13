@@ -10,7 +10,7 @@ function Profile({ user }) {
       <dt>Password</dt>
       <dd>{password}</dd>
       <dt>Name</dt>
-      <dd>Alumno</dd>
+      <dd>{name}</dd>
     </>
   );
 }
