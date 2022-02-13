@@ -16,20 +16,7 @@ class Home extends React.Component {
       password: this.inputPassword.current.value,
     });
   }
-   Profile({ user }) {
-    const { email, password, name } = user || {};
-    return (
-      <>
-        <h1>Bienvenido {email} </h1>
-        <dt>Email</dt>
-        <dd>{email}</dd>
-        <dt>Password</dt>
-        <dd>{password}</dd>
-        <dt>Name</dt>
-        <dd>{name}</dd>
-      </>
-    );
-  }
+ 
   
   componentDidMount() {
     this.setState({
@@ -42,7 +29,9 @@ class Home extends React.Component {
  
       return (
         <div className="main-site">
-          <h1>Bienvenido!</h1>
+          <h1>Bienvenido al home de la aplicacion!</h1>
+          <h1>Pulsa perfil para ver la informacion de tu usuario</h1>
+          <h1>Pulsa logout para cerrar sesion</h1>
           <Container>
             
           </Container>

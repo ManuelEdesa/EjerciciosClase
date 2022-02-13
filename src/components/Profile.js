@@ -4,13 +4,13 @@ function Profile({ user }) {
   const { email, password, name } = user || {};
   return (
     <>
-      <h1>Bienvenido {email} </h1>
+      <h1>Este es el perfil de  {email} </h1>
       <dt>Email</dt>
       <dd>{email}</dd>
       <dt>Password</dt>
       <dd>{password}</dd>
       <dt>Name</dt>
-      <dd>{name}</dd>
+      <dd>Alumno</dd>
     </>
   );
 }
