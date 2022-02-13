@@ -4,7 +4,7 @@ function Profile({ user }) {
   const { email, password, name } = user || {};
   return (
     <>
-      <h1>Profile</h1>
+      <h1>Bienvenido {email} </h1>
       <dt>Email</dt>
       <dd>{email}</dd>
       <dt>Password</dt>

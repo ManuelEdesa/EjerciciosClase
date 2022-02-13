@@ -25,18 +25,18 @@ class Home extends React.Component {
   }
 
   render() {
-  
+ 
       return (
         <div className="main-site">
-          <h1>Bienvenido</h1>
-          
+          <h1>Bienvenido!</h1>
+          <Container>
+            
+          </Container>
         </div>
       );
     
   }
- 
-
-  function Profile({ user }) {
+   Profile({ user }) {
     const { email, password, name } = user || {};
     return (
       <>
@@ -50,8 +50,6 @@ class Home extends React.Component {
       </>
     );
   }
-  
-  export default Profile;
   componentWillUnmount() {
     localStorage.setItem('user', this.state.user);
     localStorage.setItem('password', this.state.password);
