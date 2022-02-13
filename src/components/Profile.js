@@ -7,9 +7,9 @@ function Profile({ user }) {
       <h1>Este es el perfil de  {email} </h1>
       <dt>Email</dt>
       <dd>{email}</dd>
-      <dt>Password</dt>
+      <dt>Contraseña</dt>
       <dd>{password}</dd>
-      <dt>Name</dt>
+      <dt>Nombre</dt>
       <dd>{name}</dd>
     </>
   );
