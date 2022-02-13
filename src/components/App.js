@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
-import { signIn } from './auth';
-import AuthRoute from './AuthRoute';
+import { signIn } from '/auth';
+import AuthRoute from '/AuthRoute';
 
-import Home from './Home';
+import Home from '/Home';
 import About from '/About';
 import Profile from '/Profile';
 import NotFound from '/NotFound';

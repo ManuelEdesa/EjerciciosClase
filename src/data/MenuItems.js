@@ -9,7 +9,7 @@ import App from '../components/App';
 export const MenuItems = [
 
   {
-    id: 8,
+    id: 7,
     path: '/Login',
     title: 'Login',
     component: App,
