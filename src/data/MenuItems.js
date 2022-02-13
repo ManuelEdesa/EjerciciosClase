@@ -5,15 +5,10 @@ import Series from '../components/Series';
 import PelisGhibli from '../components/PelisGhibli';
 import Especies from '../components/Especies';
 import Crypto from '../components/Crypto';
-import HomePage from '../components/HomePage/HomePage';
+
 export const MenuItems = [
   
-  {
-    id: 8,
-    path: '/',
-    title: 'HomePage',
-    component: HomePage,
-  },
+ 
   {
     id: 1,
     path: '/',
@@ -56,6 +51,7 @@ export const MenuItems = [
     title: 'Crypto',
     component: Crypto,
   },
+
 ];
 
 /*
